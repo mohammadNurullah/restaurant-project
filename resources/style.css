@@ -1,0 +1,317 @@
+/*-----------------------*/
+/*----- BASIC SETUP -----*/
+/*-----------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+/*----------------------------------------*/
+/*----- nav design starts from here -----*/
+/*----------------------------------------*/
+.navbar {
+  background: linear-gradient(to right, #24a19c, #00cec9);
+  padding: 10px;
+  height: 15vh;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* nav-logo design start */
+.nav-logo {
+  width: 90px;
+  height: 90px;
+  border: 3px solid #fff;
+  border-radius: 50%;
+  text-align: center;
+  margin-left: 30px;
+}
+
+.icon {
+  color: #fff;
+  line-height: 85px;
+}
+/* nav-logo design end */
+
+/* nav-menu design start */
+.nav-menu {
+  margin-right: 25px;
+}
+
+.nav-menu a {
+  text-decoration: none;
+  font-size: 1.1rem;
+  margin: 0 20px;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-family: "Roboto", sans-serif;
+  transition: 0.3s;
+}
+
+.nav-menu a:hover {
+  transform: scale(1.5);
+  cursor: pointer;
+  border-bottom: 2px solid #fff;
+}
+/*--------------------------------*/
+/*----- nav design end here -----*/
+/*------------------------------*/
+
+/*-------------------------------------------*/
+/*----- bg img design starts from here -----*/
+/*-----------------------------------------*/
+.bg-img {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("/vendorse/images/restaurant2.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  height: 85vh;
+
+  position: relative;
+}
+
+.img-desc {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.img-desc h1 {
+  font-size: 4rem;
+  color: #000;
+  font-family: "Montserrat", sans-serif;
+  background-color: rgba(255, 255, 0, 0.884);
+  width: 100%;
+  padding: 10px 25px;
+}
+
+.img-desc p {
+  color: #fff;
+  font-size: 2.5rem;
+  text-align: center;
+  padding: 10px 0;
+  font-weight: 500;
+  font-family: "Lato", sans-serif;
+  width: 75%;
+  background-color: rgb(0, 128, 0);
+  margin: 20px auto;
+}
+
+.btn-div {
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  padding: 15px;
+  text-transform: uppercase;
+  background-color: rgb(0, 128, 0);
+  color: #fff;
+  font-size: 1.3rem;
+  width: 22%;
+  font-family: "Lato", sans-serif;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.btn:hover {
+  transform: scale(1.3);
+  cursor: pointer;
+}
+/*-------------------------------------------*/
+/*--------- bg img design end here ---------*/
+/*-----------------------------------------*/
+
+/*----------------------------------------------------*/
+/*--------- about us design start from here ---------*/
+/*--------------------------------------------------*/
+#about-us {
+  padding: 50px;
+}
+
+.about-us-desc {
+  text-align: center;
+}
+
+.about-us-desc h3 {
+  font-size: 2rem;
+  font-weight: bolder;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+}
+
+.about-us-desc p {
+  text-align: center;
+  font-size: 1.1rem;
+  width: 80%;
+  margin: 0 auto;
+}
+/*----------------------------------------------------*/
+/*------------- about us design end here ------------*/
+/*--------------------------------------------------*/
+
+/*------------------------------------------------------------*/
+/*------------- food iteam design start from here ------------*/
+/*-----------------------------------------------------------*/
+#food-iteam {
+  padding: 40px 20px;
+}
+
+.iteam-container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.card {
+  transition: 0.4s;
+}
+
+.card img {
+  width: 350px;
+  height: 350px;
+  display: block;
+}
+
+.card-desc {
+  text-align: center;
+  background-color: rgb(165, 164, 164);
+}
+
+.card-desc p {
+  height: 50px;
+  padding: 15px 0;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.iteam-name {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  width: 100%;
+  background-color: green;
+  padding: 10px;
+  color: #fff;
+}
+
+.card:hover {
+  transform: scale(1.1);
+}
+
+/*------------------------------------------------------*/
+/*------------- food iteam design end here ------------*/
+/*----------------------------------------------------*/
+
+/*------------------------------------------------------------------*/
+/*------------- map and content design start from here ------------*/
+/*----------------------------------------------------------------*/
+.map-container {
+  background-color: #595b83;
+  padding: 30px;
+
+  position: relative;
+}
+
+.map-content {
+  position: absolute;
+  top: 17%;
+  right: 10%;
+
+  text-align: center;
+}
+
+.map-content h3 {
+  font-size: 2rem;
+  color: #fff;
+  text-transform: capitalize;
+  font-family: "Lato", sans-serif;
+}
+
+#h4 {
+  font-size: 1.4rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+
+#para {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-top: 10px;
+  font-weight: 300;
+  font-style: italic;
+  font-family: "Lato", sans-serif;
+}
+
+.common-style {
+  font-size: 1.3rem;
+  font-family: "Lato", sans-serif;
+  font-weight: 500;
+}
+
+.map-content p {
+  font-size: 1rem;
+  color: #fff;
+  font-family: "Lato", sans-serif;
+}
+/*------------------------------------------------------------*/
+/*------------- map and content design end here -------------*/
+/*-----------------------------------------------------------*/
+
+/*----------------------------------------------------------*/
+/*------------- footer design start from here -------------*/
+/*--------------------------------------------------------*/
+#footer-sec {
+  background-color: #060930;
+  color: #fff;
+  padding: 30px;
+  height: 20vh;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-content p {
+  font-size: 1.1rem;
+  margin-left: 25px;
+  font-family: "Lato", sans-serif;
+}
+
+.footer-menu {
+  margin-right: 25px;
+}
+
+.footer-menu .fa {
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 0 35px;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  text-align: center;
+  transition: 0.3s;
+}
+
+.footer-menu .fa:hover {
+  background-color: #57606f;
+  transform: scale(1.2);
+  cursor: pointer;
+}
+/*---------------------------------------------------*/
+/*------------- footer design end here -------------*/
+/*-------------------------------------------------*/
